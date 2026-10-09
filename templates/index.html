@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>EXE Stegano Tool</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f9f9f9; padding: 40px; }
+        h1 { color: #333; }
+        form { background: #fff; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        input, button { padding: 8px; margin: 5px 0; }
+        button { background: #4CAF50; color: white; border: none; cursor: pointer; border-radius: 4px; }
+        button:hover { background: #45a049; }
+    </style>
+</head>
+<body>
+    <h1>EXE Stegano Tool (Web)</h1>
+
+    <form action="/hide" method="post" enctype="multipart/form-data">
+        <h3>Спрятать EXE в PNG</h3>
+        <label>EXE-файл: <input type="file" name="exe_file" required></label><br>
+        <label>PNG-контейнер: <input type="file" name="img_file" accept="image/png" required></label><br>
+        <button type="submit">Спрятать</button>
+    </form>
+
+    <form action="/extract" method="post" enctype="multipart/form-data">
+        <h3>Извлечь EXE из PNG</h3>
+        <label>PNG с секретом: <input type="file" name="img_file" accept="image/png" required></label><br>
+        <button type="submit">Извлечь</button>
+    </form>
+</body>
+</html>
