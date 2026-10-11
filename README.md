@@ -2,6 +2,9 @@
 
 Веб-приложение для стеганографии: прячет EXE-файлы внутри PNG-изображений. Полностью контейнеризировано, автоматически собирается через GitHub Actions, разворачивается через Docker Compose, имеет мониторинг через Prometheus и Grafana. Само приложение было разработано в рамках учебной дисциплины "Защита информации" на втором курсе.
 
+<img width="1327" height="590" alt="image" src="https://github.com/user-attachments/assets/bfe986dc-612e-462c-a8b1-346d931bc778" />
+
+
 ## Что умеет приложение
 
 - **Скрыть EXE в PNG** - кодирует исполняемый файл в младшие биты пикселей изображения.
@@ -57,3 +60,5 @@ docker-compose down
 - Health check (1 = живо, 0 = упало).
 - Потребление CPU.
 - Потребление RAM.
+<img width="1356" height="616" alt="image" src="https://github.com/user-attachments/assets/37de0eea-e054-45e3-9b69-93dc97874f76" />
+
