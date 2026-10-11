@@ -1,11 +1,11 @@
-# Stegano App — Docker + CI/CD + Мониторинг
+# Stegano App - Docker + CI/CD + Мониторинг
 
 Веб-приложение для стеганографии: прячет EXE-файлы внутри PNG-изображений. Полностью контейнеризировано, автоматически собирается через GitHub Actions, разворачивается через Docker Compose, имеет мониторинг через Prometheus и Grafana.
 
 ## Что умеет приложение
 
-- **Скрыть EXE в PNG** — кодирует исполняемый файл в младшие биты пикселей изображения.
-- **Извлечь EXE из PNG** — восстанавливает исходный файл из картинки.
+- **Скрыть EXE в PNG** - кодирует исполняемый файл в младшие биты пикселей изображения.
+- **Извлечь EXE из PNG** - восстанавливает исходный файл из картинки.
 
 ## Технологии
 
@@ -35,10 +35,10 @@ docker-compose up -d --build
 
 | Сервис | URL | Логин/пароль |
 |---|---|---|
-| Приложение | http://localhost:5000 | — |
-| Health check | http://localhost:5000/health | — |
-| Метрики | http://localhost:5000/metrics | — |
-| Prometheus | http://localhost:9090 | — |
+| Приложение | http://localhost:5000 | - |
+| Health check | http://localhost:5000/health | - |
+| Метрики | http://localhost:5000/metrics | - |
+| Prometheus | http://localhost:9090 | - |
 | Grafana | http://localhost:3000 | admin / admin |
 
 ### Остановка
